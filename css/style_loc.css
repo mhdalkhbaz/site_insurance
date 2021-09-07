@@ -1,0 +1,238 @@
+ 
+ .nav-full-width{
+
+    margin: 0 50px;
+ }   
+.navbar-custom{
+    top: 0;
+}
+
+@media (max-width:1200px){
+.navbar-brand h5 {
+                             border: none;
+                    font-size: 17px;
+                    color: #757575;
+                    font-family: unset;
+                    text-align: center;
+}
+}
+@media (max-width: 430px){
+.navbar-brand   h4 {
+    font-size: 16px;
+    line-height: 0.1;
+    padding: 1px;
+}
+
+  
+.nav-full-width{
+
+margin: 0 10px;
+}   
+.navbar-brand h5 {
+    font-size: 12px;
+    margin: 10px;
+}
+
+.navbar-brand a {
+    padding: 10px;
+}
+
+
+} 
+
+.prod-tab-content p{
+    font-size: 20px;
+    
+}
+.prod-tab-content h3{
+   color: #840404;
+   text-align: center;
+}
+
+@media (max-width: 767px){
+.product-tab img {
+    right: 0;
+}
+} 
+    body{ 
+                        overflow-x: hidden;
+                    }
+
+
+.navbar-collapse{
+    border: none;
+}
+
+#loader{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 999999;
+    background: #d2d2d2;
+    position: fixed;
+}
+#intro i{
+    width: auto;
+    border-radius: 20% ;
+    font-size: 17px;
+}
+ 
+        .icon-bar {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 9999 !important;
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .whatsapp {
+            background: #075e54;
+            color: white;
+        }
+
+        .linkedin {
+            background: #0e76a8;
+            color: white;
+        }
+        .back_w{
+            background: #fffffff7 round;
+        }
+
+        @media(max-width: 630px) {
+               .image-logo-section{
+                   width: 100%;
+                   
+                }
+
+                .image-logo-section img{
+                   width: 40%;
+                   margin-bottom: 40px;
+            }
+
+          
+                   
+                }
+                .logo_nav{
+                    opacity:0.3
+
+                }
+            .logo_section    {
+                    opacity:0.3;
+                }
+                input[type=number]::-webkit-inner-spin-button, 
+                input[type=number]::-webkit-outer-spin-button { 
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    margin: 0; 
+            }
+            .f_num{
+                margin: 0;
+                padding: 0;
+                border: none;
+                border-bottom: 1px solid #e9e9e9;
+                font-weight: 300;
+                text-indent: 10px;
+                line-height: 40px;
+                height: 40px;
+                color: #989898;
+                font-size: 14px;
+                width: 100%;
+                 
+            }
+            ::placeholder {
+            color: #0c3452;}
+            
+            .prod-tab-content h3{
+                                    margin: 60px 0;
+                                    }
+
+                                    .label_div{ padding-left: 60px;
+                       
+                    }
+                    .pd-5{
+                        padding: 5px;
+                    }
+                    .pd-20{
+                        padding: 20px;
+                    }
+                    .pd-30{
+                        padding: 30px;
+                    }
+    
+
+                    .navloc  {
+                
+                        line-height: 348%;
+                  
+                    }
+                    .navloc a{
+                        font-size: 20px;
+                        margin: auto;
+                        padding: 10px;
+                    }
+
+                    @media(max-width: 980px)
+                    {
+                        .navloc a{
+                            display: block;
+                            padding: 0;
+                            margin: 0;
+                            line-height: 2;
+                            text-align: center;
+                            margin-top: 20px ;
+                            border: none;
+                            }
+
+
+                          
+                    }
+                    .font20{
+                       
+                    font-size: 20px;
+                 
+                    }
+                    @media(max-width: 1180px)
+                    {
+                        div .navloc{
+                            margin: 0;
+                        }
+                    }
+                    @media(max-width: 600px)
+                    {
+                        #imageslide{
+                           width: 130%;
+                        }
+                    }
+                    
+                    @media(min-width:  980px)
+                    {
+                        .navbar-collapse{
+                            margin-left:150px
+                        }
+                    }
+                    
+                    .footer_a{
+                        color: #002a4a;
+                    }
+                    .icon_win{
+                        font-size: 24px;
+                    float: left;
+                    margin: 0 5px;
+                     text-align: center;
+                    }
