@@ -33,6 +33,9 @@
                         
                             if(radios[i].value= "sugg")
                             {
+                              (function () {
+                                emailjs.init('user_vrfq1VPKZAq9HGqsy5mbV');
+                            })();
                             emailjs.send('service_0zd5y7d', 'template_jixqjdn', templateParams);
                           alert(" تم ارسال طلبك سوف يتم التواصل معكم في اقرب وقت وشكرا لك ");
                             
@@ -52,7 +55,7 @@
                            else{ 
                             if(radios[i].value = "sales")
                             {
-                            emailjs.send('service_np5o496', 'template_jixqjdn', templateParams);
+                            emailjs.send('service_g2uybnt', 'template_18coxxp', templateParams);
                           alert(" تم ارسال طلبك سوف يتم التواصل معكم في اقرب وقت وشكرا لك ");
 
                             return true;
