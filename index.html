@@ -9,7 +9,6 @@
      <meta name="keywords" content="insurance">
      <title>تكافل الشرق الأوسط</title>
      <link rel="shortcut icon" href="images/logo2.png">
-     <link rel="shortcut icon" href="images/favicon.png" />
      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
          type="text/css">
      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet'
@@ -22,22 +21,43 @@
      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo" />
      <!--[if lt IE 8]><!-->
-     <link rel="stylesheet" href="ie7/ie7.css">
      <!--<![endif]-->
      <link href="css/proloader.css" rel="stylesheet" type="text/css">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet" type="text/css">
      <link href="css/style_loc.css" rel="stylesheet" type="text/css">
+     <!-- 
+ <style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
- 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+     /* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(158, 198, 228)   ; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616161; 
+}
+ </style> -->
 
  </head>
 
 
 
- <body data-spy="scroll" data-target="navbar-fixed-top" dir="rtl" style="font-family: cairo;" onload="myFunction()">
+ <body data-spy="scroll" data-target="navbar-fixed-top" dir="rtl" style="font-family: cairo;"
+     onload="myFunction(),createCaptcha()">
 
-                                   <!-- icon    -->
+     <!-- icon    -->
      <div class="icon-bar m-start">
          <a href="https://wa.me/+966566883335" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
          <a href="https://www.linkedin.com/company/takaful-of-the-middle-east" class="linkedin"><i
@@ -45,7 +65,7 @@
      </div>
 
 
-                                  <!-- loader -->
+     <!-- loader -->
      <div id="loader">
          <svg width="200" height="200" viewBox="0 0 100 100" style="z-index: 99999999;">
              <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none">
@@ -61,7 +81,7 @@
      </div>
 
      <header>
-                                   <!-- nav bar -->
+         <!-- nav bar -->
          <nav class="navbar navbar-custom navbar-fixed-top  " role="navigation">
              <div class="container nav-full-width">
                  <div class="row">
@@ -71,9 +91,10 @@
                              data-target=".navbar-main-collapse">
                              <i class="fa fa-bars"></i>
                          </button>
-                         <img class="logo_nav" src="images/logo - Copy.png" style="
-                  float: right;
-                  width: 51px;" alt="">
+
+                         <img class="logo_nav" src="images/logo2.png" style="
+                                    float: right;
+                                    width: 51px;" alt="">
 
                          <a class="navbar-brand  " style="    float: right;
                            margin-left: 5px; color: #002a4a;" href="index.html">
@@ -115,7 +136,7 @@
      <div class="clear"></div>
      <div id="page-content">
 
-                                 <!-- flexslider -->
+         <!-- flexslider -->
          <section class="flexslider " dir="ltr">
              <ul class="slides">
                  <li>
@@ -299,6 +320,7 @@
 
          <br>
          <br>
+         <link rel="stylesheet" type="text/css" href="css/captcha.css">
 
 
          <!-- contact us -->
@@ -312,11 +334,10 @@
                          <script type="text/javascript"
                              src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
                          <script type="text/javascript">
-                           
+
                          </script>
 
-                         <form id="form" onsubmit="return validations()">
-
+                         <form id="form" onsubmit="return validations()" method="POST">
 
                              <div class="form_1  col-lg-3  " dir="rtl" style="
                     float: right;
@@ -347,27 +368,52 @@
                                  <br>
 
                              </div>
+
                              <div>
-                                 <input type="text" class="font20" id="name" name="name" placeholder=" الاسم"
-                                     required />
+                                 <input type="text" style="font-size:20px" class="font20" id="name" name="name"
+                                     placeholder=" الاسم" required />
                              </div>
                              <div>
-                                 <input type="text" class="font20" id="email" name="email"
+                                 <input type="text" style="font-size:20px" class="font20" id="email" name="email"
                                      placeholder="البريد الإلكتروني " required />
 
                              </div>
                              <div>
-                                 <input type="number" class="f_num font20" id="num" name="num" placeholder="رقم الهاتف "
-                                     required />
+                                 <input type="number" style="font-size:20px" class="f_num font20" id="num" name="num"
+                                     placeholder="رقم الهاتف " required />
 
                              </div>
                              <div>
-                                 <input type="text" class="font20" name="sub" id="sub" placeholder="الموضوع" required />
+                                 <input type="text" style="font-size:20px" class="font20" name="sub" id="sub"
+                                     placeholder="الموضوع" required />
                              </div>
 
                              <div>
                                  <textarea rows="1" style="font-size:20px" cols="1" name="messg" id="messg"
-                                     placeholder="الرسالة" required></textarea>
+                                     placeholder="الرسالة" style="font-size:20px" required></textarea>
+                             </div>
+
+                             <br>
+                             <br>
+
+                             <div>
+                                 <h4 style="color: #6f0000;">
+                                     &nbsp; &nbsp; الرجاء ادخال النص التالي </h4>
+                                 <br>
+
+                                 <input type="text" placeholder=" " id="cpatchaTextBox" style="
+                             display: inline;
+                             width: 100px;
+                             border: 1px #272727 solid;
+                             float: right;
+                             font-size : 24px;
+                             text-align: center;
+                         " />
+                                 <div id="captcha" style="
+                             display: inline;
+                         ">
+                                 </div>
+
                              </div>
                              <div class="text-center">
                                  <input type="submit" class="btn-default" value="إرسال" />
@@ -401,9 +447,9 @@
          </div>
 
      </div>
-</div>
+     </div>
 
-                    <!-- footer -->
+     <!-- footer -->
      <footer style="color: #002a4a ; background-color: #D3E0EA; ">
          <div class="container">
              <div class="row text-center " dir="rtl">
